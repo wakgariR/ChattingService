@@ -1,0 +1,140 @@
+﻿@page "/profile"
+
+<div class="container">
+    <div class="row">
+  		<div class="col-sm-10"><h5>User name</h5></div>
+    	</div>
+    <div class="row">
+  		<div class="col-sm-3">
+              
+
+              <div class="text-center">
+                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                <h6>Upload a different photo...</h6>
+                <input type="file" class="text-center center-block file-upload">
+              </div><hr/><br>
+
+          
+        </div>
+    	<div class="col-sm-9">
+          
+           <MudTabs Elevation="1" Rounded="true" PanelClass="pa-6">
+                <MudTabPanel Text="Generak" ToolTip="General">
+                     <form class="form" action="##" method="post" id="registrationForm">
+                          <div class="col-sm-12 row">
+                              <div class="col-sm-6">
+                                    <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">First name</label>
+                                              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                                          </div>
+                                    </div>
+                                     <div class="form-group">
+                                          <div class="col-xs-6">
+                                            <label for="last_name">Last Name</label>
+                                              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                                          </div>
+                                      </div>
+                                       <div class="form-group">
+                                          <div class="col-xs-6">
+                                            <label for="last_name">Role</label>
+                                              <input type="text" class="form-control" name="role" id="role"  disabled>
+                                          </div>
+                                      </div>
+                                       <div class="form-group">
+                                          <div class="col-xs-6">
+                                            <label for="last_name">Secret User Name</label>
+                                              <input type="text" class="form-control" name="secret_user_name" id="secret_user_name"  >
+                                          </div>
+                                      </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Middle Name</label>
+                                              <input type="text" class="form-control" name="middle_name" id="middle_name" placeholder="middle name" title="enter your middle name if any.">
+                                          </div>
+                                    </div>
+                                     <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Department </label>
+                                               <select class="form-control">
+                                                    <option value="Unknown" selected>Select Origin</option>
+                                                        <option value="Computer_Science">Computer Science</option>
+                                                        <option value="Accounting">Accounting</option>
+                                                </select>
+                                          </div>
+                                    </div>
+                                     <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Username</label>
+                                              <input type="text" class="form-control" name="user_name" id="user_name"  >
+                                          </div>
+                                    </div>
+                              </div>
+                          </div>
+                    
+                    
+        
+              	</form>
+                </MudTabPanel>
+                <MudTabPanel Text="Address" ToolTip="Address">
+                    <form class="form" action="##" method="post" id="addressForm">
+                        <div class="col-sm-12 row">
+                              <div class="col-sm-6">
+                                   <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Phone</label>
+                                              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="phone">
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Region</label>
+                                              <input type="text" class="form-control" name="region" id="phone" placeholder="region" title="region">
+                                          </div>
+                                    </div>
+                                     <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Kebele</label>
+                                              <input type="text" class="form-control" name="kebele" id="kebele" placeholder="kebele" title="kebele">
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                  <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Email</label>
+                                              <input type="text" class="form-control" name="email" id="phone" placeholder="email" title="email">
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Wereda</label>
+                                              <input type="text" class="form-control" name="wereda" id="wereda" placeholder="wereda" title="wereda">
+                                          </div>
+                                    </div>
+                                     <div class="form-group">
+                                          <div class="col-xs-6">
+                                              <label for="first_name">Location</label>
+                                              <input type="text" class="form-control" name="location" id="location" placeholder="location" title="location">
+                                          </div>
+                                    </div>
+                              </div>
+                              
+                         </div>
+                    </form>
+                </MudTabPanel>
+              
+            </MudTabs>
+
+              
+        
+          </div>
+
+        </div>
+    </div>
+@code {
+   
+}
